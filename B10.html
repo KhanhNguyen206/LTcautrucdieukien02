@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let day = parseFloat(prompt("so ngay su dung dien thuc te"));
+    let dinhMucBac12 = (50 / 31) * day;
+    let dienNangTieuThu = parseFloat(prompt("so dien nang tieu thu"));
+    let price;
+    if (dienNangTieuThu <= 50) {
+        price = dinhMucBac12 * 1484;
+        alert(price + " VND");
+    }
+    if (dienNangTieuThu > 50 && dienNangTieuThu <= 100) {
+        price = dinhMucBac12 * 1484 + ((dienNangTieuThu - dinhMucBac12) * 1533);
+        alert(price);
+    }
+    if (dienNangTieuThu > 100 && dienNangTieuThu <= 200) {
+        price = dinhMucBac12 * 1484 + dinhMucBac12 * 1533 + ((dienNangTieuThu - dinhMucBac12 * 2) * 1786);
+        alert(price);
+    }
+</script>
+</body>
+</html>

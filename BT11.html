@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT11</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("TNTT (trieu dong)"));
+    let thue;
+    if (a <= 5) {
+        thue = 0.05 * a;
+        alert("So tien thue phai dong la " + thue);
+    }
+    if (a > 5 && a <= 10) {
+        thue = 0.1 * a - 0.25;
+        alert("So tien thue phai dong la " + thue);
+    }
+    if (a > 10 && a <= 18) {
+        thue = 0.15 * a - 0.75;
+        alert("So tien thue phai dong la " + thue);
+    }
+    if (a > 18 && a <= 32) {
+        thue = 0.2 * a - 1.65;
+        alert("So tien thue phai dong la " + thue);
+    }
+</script>
+</body>
+</html>
